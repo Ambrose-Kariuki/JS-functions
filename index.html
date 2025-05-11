@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>JavaScript Functions</h1>
-
-<p>Call a function which performs a calculation and returns the result:</p>
+<h1>JavaScript Object Properties</h1>
+<h2>Access a Property with .</h2>
 
 <p id="demo"></p>
 
 <script>
-let x = myFunction(4, 3);
-document.getElementById("demo").innerHTML = x;
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
 
-function myFunction(a, b) {
-  return a * b;
-}
+document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
 </script>
 
 </body>
